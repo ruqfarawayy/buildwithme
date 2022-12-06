@@ -1,6 +1,7 @@
 body {
   background-color: #e4e6eb;
   font-family: "Assistant", sans-serif;
+  font-weight:500;
   color: #071c4d;
 }
 .navbar-brand {
@@ -13,11 +14,11 @@ body {
 .navbar-light {
   .navbar-nav {
     .nav-link {
-      color: #071c4d;
+      color: #071c4d !important;
 
       &.active {
         font-weight: bold;
-        color: #071c4d;
+        color: #071c4d !important;
       }
     }
   }
@@ -39,3 +40,113 @@ body {
     color: #fff;
   }
 }
+
+//Header
+
+header {
+  padding: 180px 0px 165px;
+  margin-top: -70px;
+  background-image: url('/frontend/images/header-background@2x.jpg');
+  background-size: cover;
+
+  h1,p {
+    color: #fff;
+  }
+
+  h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    font-size: 50px;
+  }
+  p {
+    font-size: 22px;
+  }
+  .btn-get-started {
+    background-color: #FF9E53;
+    color: #fff;
+
+    &:hover {
+      background-color: #eda56e;
+      color: #fff;
+    }
+  }
+}
+
+//Statistics
+.section-stats {
+  margin-top: -50px;
+
+  .stats-detail{
+    padding-top: 15px;
+    background-color: #fff;
+    padding-left: 40px;
+  }
+  h2 {
+    font-size: 30px;
+    margin-bottom: 0;
+  }
+  p {
+    font-size: 20px;
+    font-weight: lighter;
+  }
+}
+// popular
+.section-popular {
+  min-height: 540px;
+  background-color: #051334;
+  margin-top: -50px;
+  margin-bottom: -230px;
+
+  .section-popular-heading {
+    margin-top: 150px;
+
+    h2,p {
+      color: #fff;
+    }
+
+    h2 {
+      font-family: 'Playfair Display', serif;
+      font-weight: bold;
+      font-size: 40px;
+    }
+
+    p {
+      font-size: 18px;
+    }
+  }
+}
+
+.section-popular-content {
+  .section-popular-travel {
+    .card-travel {
+      min-height: 380px;
+      background-color: #ddd;
+      color: #fff;
+      padding: 30px;
+      background-size: cover;
+      margin-bottom: 20px;
+    }
+
+    .travel-country {
+      font-size: 18px;
+      color: #fff;
+    }
+    .travel-location {
+      font-size: 26px;
+      color: #fff;
+    }
+
+    .travel-button {
+      .btn-travel-details {
+        background-color: #FF9E53;
+        color: #fff;
+
+        &:hover {
+          background-color: #FFAE6F;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
